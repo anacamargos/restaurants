@@ -24,6 +24,7 @@
 		BF19C52D2221AA0E009CDAF2 /* LocationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF19C52C2221AA0E009CDAF2 /* LocationViewController.swift */; };
 		BF19C5302221AD23009CDAF2 /* LocationServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF19C52F2221AD23009CDAF2 /* LocationServices.swift */; };
 		BF19C5322221F971009CDAF2 /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = BF19C5312221F971009CDAF2 /* Podfile */; };
+		BF19C534222203BA009CDAF2 /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF19C533222203BA009CDAF2 /* NetworkService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -68,6 +69,7 @@
 		BF19C52C2221AA0E009CDAF2 /* LocationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationViewController.swift; sourceTree = "<group>"; };
 		BF19C52F2221AD23009CDAF2 /* LocationServices.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationServices.swift; sourceTree = "<group>"; };
 		BF19C5312221F971009CDAF2 /* Podfile */ = {isa = PBXFileReference; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; };
+		BF19C533222203BA009CDAF2 /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
 		FD8C52EF53C9C7119C900E20 /* Pods-Restaurants.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Restaurants.release.xcconfig"; path = "Target Support Files/Pods-Restaurants/Pods-Restaurants.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -236,6 +238,7 @@
 			isa = PBXGroup;
 			children = (
 				BF19C52F2221AD23009CDAF2 /* LocationServices.swift */,
+				BF19C533222203BA009CDAF2 /* NetworkService.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -427,6 +430,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BF19C534222203BA009CDAF2 /* NetworkService.swift in Sources */,
 				BF19C51B2221A40F009CDAF2 /* BaseView.swift in Sources */,
 				BF19C52B2221A965009CDAF2 /* LocationView.swift in Sources */,
 				BF19C51F2221A515009CDAF2 /* DetailsFoodView.swift in Sources */,
