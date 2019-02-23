@@ -14,6 +14,9 @@
 		BF19C4F622219259009CDAF2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BF19C4F422219259009CDAF2 /* LaunchScreen.storyboard */; };
 		BF19C50122219259009CDAF2 /* RestaurantsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF19C50022219259009CDAF2 /* RestaurantsTests.swift */; };
 		BF19C50C22219259009CDAF2 /* RestaurantsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF19C50B22219259009CDAF2 /* RestaurantsUITests.swift */; };
+		BF19C51B2221A40F009CDAF2 /* BaseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF19C51A2221A40F009CDAF2 /* BaseView.swift */; };
+		BF19C51F2221A515009CDAF2 /* DetailsFoodView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF19C51E2221A515009CDAF2 /* DetailsFoodView.swift */; };
+		BF19C5212221A6F5009CDAF2 /* DetailsFoodViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF19C5202221A6F5009CDAF2 /* DetailsFoodViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +50,9 @@
 		BF19C50722219259009CDAF2 /* RestaurantsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RestaurantsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		BF19C50B22219259009CDAF2 /* RestaurantsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantsUITests.swift; sourceTree = "<group>"; };
 		BF19C50D22219259009CDAF2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BF19C51A2221A40F009CDAF2 /* BaseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseView.swift; sourceTree = "<group>"; };
+		BF19C51E2221A515009CDAF2 /* DetailsFoodView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsFoodView.swift; sourceTree = "<group>"; };
+		BF19C5202221A6F5009CDAF2 /* DetailsFoodViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsFoodViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,6 +103,7 @@
 		BF19C4EA22219258009CDAF2 /* Restaurants */ = {
 			isa = PBXGroup;
 			children = (
+				BF19C5192221A3EA009CDAF2 /* Screen */,
 				BF19C4EB22219258009CDAF2 /* AppDelegate.swift */,
 				BF19C4ED22219258009CDAF2 /* ViewController.swift */,
 				BF19C4EF22219258009CDAF2 /* Main.storyboard */,
@@ -123,6 +130,32 @@
 				BF19C50D22219259009CDAF2 /* Info.plist */,
 			);
 			path = RestaurantsUITests;
+			sourceTree = "<group>";
+		};
+		BF19C5192221A3EA009CDAF2 /* Screen */ = {
+			isa = PBXGroup;
+			children = (
+				BF19C51C2221A4E5009CDAF2 /* Details */,
+				BF19C51A2221A40F009CDAF2 /* BaseView.swift */,
+			);
+			path = Screen;
+			sourceTree = "<group>";
+		};
+		BF19C51C2221A4E5009CDAF2 /* Details */ = {
+			isa = PBXGroup;
+			children = (
+				BF19C51D2221A4F9009CDAF2 /* Views */,
+				BF19C5202221A6F5009CDAF2 /* DetailsFoodViewController.swift */,
+			);
+			path = Details;
+			sourceTree = "<group>";
+		};
+		BF19C51D2221A4F9009CDAF2 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				BF19C51E2221A515009CDAF2 /* DetailsFoodView.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -256,6 +289,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BF19C51B2221A40F009CDAF2 /* BaseView.swift in Sources */,
+				BF19C51F2221A515009CDAF2 /* DetailsFoodView.swift in Sources */,
+				BF19C5212221A6F5009CDAF2 /* DetailsFoodViewController.swift in Sources */,
 				BF19C4EE22219258009CDAF2 /* ViewController.swift in Sources */,
 				BF19C4EC22219258009CDAF2 /* AppDelegate.swift in Sources */,
 			);
