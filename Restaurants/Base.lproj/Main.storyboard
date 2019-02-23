@@ -104,6 +104,9 @@
                             <outlet property="denyButton" destination="IK9-WB-ZFo" id="E1L-ev-d7t"/>
                         </connections>
                     </view>
+                    <connections>
+                        <outlet property="locationView" destination="8bC-Xf-vdC" id="IdY-VZ-zwB"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>

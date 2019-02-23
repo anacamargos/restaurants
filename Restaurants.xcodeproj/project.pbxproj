@@ -22,6 +22,7 @@
 		BF19C52B2221A965009CDAF2 /* LocationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF19C52A2221A965009CDAF2 /* LocationView.swift */; };
 		BF19C52D2221AA0E009CDAF2 /* LocationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF19C52C2221AA0E009CDAF2 /* LocationViewController.swift */; };
 		BF19C5302221AD23009CDAF2 /* LocationServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF19C52F2221AD23009CDAF2 /* LocationServices.swift */; };
+		BF19C5322221F971009CDAF2 /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = BF19C5312221F971009CDAF2 /* Podfile */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -63,6 +64,7 @@
 		BF19C52A2221A965009CDAF2 /* LocationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationView.swift; sourceTree = "<group>"; };
 		BF19C52C2221AA0E009CDAF2 /* LocationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationViewController.swift; sourceTree = "<group>"; };
 		BF19C52F2221AD23009CDAF2 /* LocationServices.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationServices.swift; sourceTree = "<group>"; };
+		BF19C5312221F971009CDAF2 /* Podfile */ = {isa = PBXFileReference; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -93,6 +95,7 @@
 		BF19C4DF22219258009CDAF2 = {
 			isa = PBXGroup;
 			children = (
+				BF19C5312221F971009CDAF2 /* Podfile */,
 				BF19C4EA22219258009CDAF2 /* Restaurants */,
 				BF19C4FF22219259009CDAF2 /* RestaurantsTests */,
 				BF19C50A22219259009CDAF2 /* RestaurantsUITests */,
@@ -116,8 +119,8 @@
 				BF19C52E2221ACFF009CDAF2 /* Services */,
 				BF19C5192221A3EA009CDAF2 /* Screen */,
 				BF19C4EB22219258009CDAF2 /* AppDelegate.swift */,
-				BF19C4ED22219258009CDAF2 /* ViewController.swift */,
 				BF19C4EF22219258009CDAF2 /* Main.storyboard */,
+				BF19C4ED22219258009CDAF2 /* ViewController.swift */,
 				BF19C4F222219259009CDAF2 /* Assets.xcassets */,
 				BF19C4F422219259009CDAF2 /* LaunchScreen.storyboard */,
 				BF19C4F722219259009CDAF2 /* Info.plist */,
@@ -319,6 +322,7 @@
 			files = (
 				BF19C4F622219259009CDAF2 /* LaunchScreen.storyboard in Resources */,
 				BF19C4F322219259009CDAF2 /* Assets.xcassets in Resources */,
+				BF19C5322221F971009CDAF2 /* Podfile in Resources */,
 				BF19C4F122219258009CDAF2 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

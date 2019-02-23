@@ -21,7 +21,12 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         switch locationService.status {
         case .notDetermined, .denied, .restricted:
             let locationViewController = storyboard.instantiateViewController(withIdentifier: "LocationViewController") as? LocationViewController
+            
+            locationViewController?.locationService = locationService
+            
             window.rootViewController = locationViewController
+            
+            
         default:
             assertionFailure()
             //voltar aqui
