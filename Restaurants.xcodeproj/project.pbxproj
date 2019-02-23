@@ -17,6 +17,10 @@
 		BF19C51B2221A40F009CDAF2 /* BaseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF19C51A2221A40F009CDAF2 /* BaseView.swift */; };
 		BF19C51F2221A515009CDAF2 /* DetailsFoodView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF19C51E2221A515009CDAF2 /* DetailsFoodView.swift */; };
 		BF19C5212221A6F5009CDAF2 /* DetailsFoodViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF19C5202221A6F5009CDAF2 /* DetailsFoodViewController.swift */; };
+		BF19C5242221A7DA009CDAF2 /* RestaurantTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF19C5232221A7DA009CDAF2 /* RestaurantTableViewController.swift */; };
+		BF19C5272221A82F009CDAF2 /* RestaurantTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF19C5262221A82F009CDAF2 /* RestaurantTableViewCell.swift */; };
+		BF19C52B2221A965009CDAF2 /* LocationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF19C52A2221A965009CDAF2 /* LocationView.swift */; };
+		BF19C52D2221AA0E009CDAF2 /* LocationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF19C52C2221AA0E009CDAF2 /* LocationViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +57,10 @@
 		BF19C51A2221A40F009CDAF2 /* BaseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseView.swift; sourceTree = "<group>"; };
 		BF19C51E2221A515009CDAF2 /* DetailsFoodView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsFoodView.swift; sourceTree = "<group>"; };
 		BF19C5202221A6F5009CDAF2 /* DetailsFoodViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsFoodViewController.swift; sourceTree = "<group>"; };
+		BF19C5232221A7DA009CDAF2 /* RestaurantTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantTableViewController.swift; sourceTree = "<group>"; };
+		BF19C5262221A82F009CDAF2 /* RestaurantTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantTableViewCell.swift; sourceTree = "<group>"; };
+		BF19C52A2221A965009CDAF2 /* LocationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationView.swift; sourceTree = "<group>"; };
+		BF19C52C2221AA0E009CDAF2 /* LocationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -135,6 +143,8 @@
 		BF19C5192221A3EA009CDAF2 /* Screen */ = {
 			isa = PBXGroup;
 			children = (
+				BF19C5282221A923009CDAF2 /* Location */,
+				BF19C5222221A788009CDAF2 /* List */,
 				BF19C51C2221A4E5009CDAF2 /* Details */,
 				BF19C51A2221A40F009CDAF2 /* BaseView.swift */,
 			);
@@ -154,6 +164,40 @@
 			isa = PBXGroup;
 			children = (
 				BF19C51E2221A515009CDAF2 /* DetailsFoodView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		BF19C5222221A788009CDAF2 /* List */ = {
+			isa = PBXGroup;
+			children = (
+				BF19C5252221A7F3009CDAF2 /* Views */,
+				BF19C5232221A7DA009CDAF2 /* RestaurantTableViewController.swift */,
+			);
+			path = List;
+			sourceTree = "<group>";
+		};
+		BF19C5252221A7F3009CDAF2 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				BF19C5262221A82F009CDAF2 /* RestaurantTableViewCell.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		BF19C5282221A923009CDAF2 /* Location */ = {
+			isa = PBXGroup;
+			children = (
+				BF19C5292221A932009CDAF2 /* Views */,
+				BF19C52C2221AA0E009CDAF2 /* LocationViewController.swift */,
+			);
+			path = Location;
+			sourceTree = "<group>";
+		};
+		BF19C5292221A932009CDAF2 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				BF19C52A2221A965009CDAF2 /* LocationView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -290,9 +334,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				BF19C51B2221A40F009CDAF2 /* BaseView.swift in Sources */,
+				BF19C52B2221A965009CDAF2 /* LocationView.swift in Sources */,
 				BF19C51F2221A515009CDAF2 /* DetailsFoodView.swift in Sources */,
+				BF19C5242221A7DA009CDAF2 /* RestaurantTableViewController.swift in Sources */,
 				BF19C5212221A6F5009CDAF2 /* DetailsFoodViewController.swift in Sources */,
 				BF19C4EE22219258009CDAF2 /* ViewController.swift in Sources */,
+				BF19C52D2221AA0E009CDAF2 /* LocationViewController.swift in Sources */,
+				BF19C5272221A82F009CDAF2 /* RestaurantTableViewCell.swift in Sources */,
 				BF19C4EC22219258009CDAF2 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
