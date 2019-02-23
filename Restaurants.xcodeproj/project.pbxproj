@@ -21,6 +21,7 @@
 		BF19C5272221A82F009CDAF2 /* RestaurantTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF19C5262221A82F009CDAF2 /* RestaurantTableViewCell.swift */; };
 		BF19C52B2221A965009CDAF2 /* LocationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF19C52A2221A965009CDAF2 /* LocationView.swift */; };
 		BF19C52D2221AA0E009CDAF2 /* LocationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF19C52C2221AA0E009CDAF2 /* LocationViewController.swift */; };
+		BF19C5302221AD23009CDAF2 /* LocationServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF19C52F2221AD23009CDAF2 /* LocationServices.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -61,6 +62,7 @@
 		BF19C5262221A82F009CDAF2 /* RestaurantTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantTableViewCell.swift; sourceTree = "<group>"; };
 		BF19C52A2221A965009CDAF2 /* LocationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationView.swift; sourceTree = "<group>"; };
 		BF19C52C2221AA0E009CDAF2 /* LocationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationViewController.swift; sourceTree = "<group>"; };
+		BF19C52F2221AD23009CDAF2 /* LocationServices.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationServices.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -111,6 +113,7 @@
 		BF19C4EA22219258009CDAF2 /* Restaurants */ = {
 			isa = PBXGroup;
 			children = (
+				BF19C52E2221ACFF009CDAF2 /* Services */,
 				BF19C5192221A3EA009CDAF2 /* Screen */,
 				BF19C4EB22219258009CDAF2 /* AppDelegate.swift */,
 				BF19C4ED22219258009CDAF2 /* ViewController.swift */,
@@ -200,6 +203,14 @@
 				BF19C52A2221A965009CDAF2 /* LocationView.swift */,
 			);
 			path = Views;
+			sourceTree = "<group>";
+		};
+		BF19C52E2221ACFF009CDAF2 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				BF19C52F2221AD23009CDAF2 /* LocationServices.swift */,
+			);
+			path = Services;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -341,6 +352,7 @@
 				BF19C4EE22219258009CDAF2 /* ViewController.swift in Sources */,
 				BF19C52D2221AA0E009CDAF2 /* LocationViewController.swift in Sources */,
 				BF19C5272221A82F009CDAF2 /* RestaurantTableViewCell.swift in Sources */,
+				BF19C5302221AD23009CDAF2 /* LocationServices.swift in Sources */,
 				BF19C4EC22219258009CDAF2 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
