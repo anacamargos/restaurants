@@ -8,6 +8,8 @@
 
 import UIKit
 import AlamofireImage
+import MapKit
+import CoreLocation
 
 class DetailsFoodViewController: UIViewController {
     
@@ -25,20 +27,30 @@ class DetailsFoodViewController: UIViewController {
         
         detailsFoodView?.collectionView?.dataSource = self
         detailsFoodView?.collectionView?.delegate = self
-
-        
-
         
     }
     
     func updateView( ) {
         if let viewModel = viewModel {
+            navigationController?.navigationBar.titleTextAttributes = [NSAttributedString.Key.foregroundColor: UIColor.black]
+            
             detailsFoodView?.priceLabel?.text = viewModel.price
             detailsFoodView?.hoursLabel?.text = viewModel.isOpen
             detailsFoodView?.locationLabel?.text = viewModel.phoneNumber
             detailsFoodView?.ratingsLabel?.text = viewModel.rating
             detailsFoodView?.collectionView?.reloadData()
+            centerMap(for: viewModel.coordinate)
+            title = viewModel.name
+            
         }
+    }
+    
+    func centerMap( for coordinate: CLLocationCoordinate2D ) {
+        let region = MKCoordinateRegion(center: coordinate, latitudinalMeters: 100, longitudinalMeters: 100)
+        let annotation = MKPointAnnotation()
+        annotation.coordinate = coordinate
+        detailsFoodView?.mapView.addAnnotation(annotation)
+        detailsFoodView?.mapView.setRegion(region, animated: true)
     }
     
 
