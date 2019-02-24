@@ -380,6 +380,9 @@
                     </view>
                     <navigationItem key="navigationItem" title="Title" largeTitleDisplayMode="never" id="zW9-nu-Nn3"/>
                     <size key="freeformSize" width="375" height="1024"/>
+                    <connections>
+                        <outlet property="detailsFoodView" destination="S68-b1-Abd" id="Dmn-mE-AwV"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="mJl-6a-Ffw" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

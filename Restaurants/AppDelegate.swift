@@ -20,6 +20,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     
     let service = MoyaProvider<YelpService.BusinessProvider>()
     let jsonDecoder = JSONDecoder()
+    
+    var navigationController: UINavigationController?
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         
@@ -56,7 +58,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             
             default:
                 let nav = storyboard.instantiateViewController(withIdentifier: "RestaurantNavigationController") as? UINavigationController
-            
+                self.navigationController = nav
                 window.rootViewController = nav
                 locationService.getLocation()
                 (nav?.topViewController as? RestaurantTableViewController)?.delegate = self
@@ -74,8 +76,13 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
                 
             case .success(let response):
                 guard let strongSelf = self else { return }
-                let details = try? strongSelf.jsonDecoder.decode(Details.self, from: response.data)
-                print("Details \n\n \(details)")
+                if let details = try? strongSelf.jsonDecoder.decode(Details.self, from: response.data) {
+                    //print("Details \n\n \(details)")
+                    let detailsViewModel = DetailsViewModel(details: details)
+                    (strongSelf.navigationController?.topViewController as? DetailsFoodViewController)?.viewModel = detailsViewModel
+                }
+                
+                
             case .failure(let error):
                 print("Failed to get details \(error)")
             }
