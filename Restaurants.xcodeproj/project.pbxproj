@@ -25,6 +25,7 @@
 		BF19C5302221AD23009CDAF2 /* LocationServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF19C52F2221AD23009CDAF2 /* LocationServices.swift */; };
 		BF19C5322221F971009CDAF2 /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = BF19C5312221F971009CDAF2 /* Podfile */; };
 		BF19C534222203BA009CDAF2 /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF19C533222203BA009CDAF2 /* NetworkService.swift */; };
+		BF19C5362222F0A4009CDAF2 /* Models.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF19C5352222F0A4009CDAF2 /* Models.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -70,6 +71,7 @@
 		BF19C52F2221AD23009CDAF2 /* LocationServices.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationServices.swift; sourceTree = "<group>"; };
 		BF19C5312221F971009CDAF2 /* Podfile */ = {isa = PBXFileReference; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; };
 		BF19C533222203BA009CDAF2 /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
+		BF19C5352222F0A4009CDAF2 /* Models.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Models.swift; sourceTree = "<group>"; };
 		FD8C52EF53C9C7119C900E20 /* Pods-Restaurants.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Restaurants.release.xcconfig"; path = "Target Support Files/Pods-Restaurants/Pods-Restaurants.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -205,6 +207,7 @@
 			children = (
 				BF19C5252221A7F3009CDAF2 /* Views */,
 				BF19C5232221A7DA009CDAF2 /* RestaurantTableViewController.swift */,
+				BF19C5352222F0A4009CDAF2 /* Models.swift */,
 			);
 			path = List;
 			sourceTree = "<group>";
@@ -433,6 +436,7 @@
 				BF19C534222203BA009CDAF2 /* NetworkService.swift in Sources */,
 				BF19C51B2221A40F009CDAF2 /* BaseView.swift in Sources */,
 				BF19C52B2221A965009CDAF2 /* LocationView.swift in Sources */,
+				BF19C5362222F0A4009CDAF2 /* Models.swift in Sources */,
 				BF19C51F2221A515009CDAF2 /* DetailsFoodView.swift in Sources */,
 				BF19C5242221A7DA009CDAF2 /* RestaurantTableViewController.swift in Sources */,
 				BF19C5212221A6F5009CDAF2 /* DetailsFoodViewController.swift in Sources */,
@@ -625,7 +629,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.hotmart.Restaurants;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_REFLECTION_METADATA_LEVEL = none;
+				SWIFT_REFLECTION_METADATA_LEVEL = all;
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -645,7 +649,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.hotmart.Restaurants;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_REFLECTION_METADATA_LEVEL = none;
+				SWIFT_REFLECTION_METADATA_LEVEL = all;
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
