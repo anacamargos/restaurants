@@ -26,6 +26,7 @@
 		BF19C5322221F971009CDAF2 /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = BF19C5312221F971009CDAF2 /* Podfile */; };
 		BF19C534222203BA009CDAF2 /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF19C533222203BA009CDAF2 /* NetworkService.swift */; };
 		BF19C5362222F0A4009CDAF2 /* Models.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF19C5352222F0A4009CDAF2 /* Models.swift */; };
+		BF19C53822232E8E009CDAF2 /* DetailsCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF19C53722232E8E009CDAF2 /* DetailsCollectionViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -72,6 +73,7 @@
 		BF19C5312221F971009CDAF2 /* Podfile */ = {isa = PBXFileReference; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; };
 		BF19C533222203BA009CDAF2 /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
 		BF19C5352222F0A4009CDAF2 /* Models.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Models.swift; sourceTree = "<group>"; };
+		BF19C53722232E8E009CDAF2 /* DetailsCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsCollectionViewCell.swift; sourceTree = "<group>"; };
 		FD8C52EF53C9C7119C900E20 /* Pods-Restaurants.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Restaurants.release.xcconfig"; path = "Target Support Files/Pods-Restaurants/Pods-Restaurants.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -198,6 +200,7 @@
 			isa = PBXGroup;
 			children = (
 				BF19C51E2221A515009CDAF2 /* DetailsFoodView.swift */,
+				BF19C53722232E8E009CDAF2 /* DetailsCollectionViewCell.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -442,6 +445,7 @@
 				BF19C5212221A6F5009CDAF2 /* DetailsFoodViewController.swift in Sources */,
 				BF19C4EE22219258009CDAF2 /* ViewController.swift in Sources */,
 				BF19C52D2221AA0E009CDAF2 /* LocationViewController.swift in Sources */,
+				BF19C53822232E8E009CDAF2 /* DetailsCollectionViewCell.swift in Sources */,
 				BF19C5272221A82F009CDAF2 /* RestaurantTableViewCell.swift in Sources */,
 				BF19C5302221AD23009CDAF2 /* LocationServices.swift in Sources */,
 				BF19C4EC22219258009CDAF2 /* AppDelegate.swift in Sources */,

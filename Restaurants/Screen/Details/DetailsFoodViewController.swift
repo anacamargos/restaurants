@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import AlamofireImage
 
 class DetailsFoodViewController: UIViewController {
     
@@ -19,6 +20,13 @@ class DetailsFoodViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        detailsFoodView?.collectionView?.register(DetailsCollectionViewCell.self, forCellWithReuseIdentifier: "ImageCell")
+        
+        detailsFoodView?.collectionView?.dataSource = self
+        detailsFoodView?.collectionView?.delegate = self
+
+        
 
         
     }
@@ -29,8 +37,31 @@ class DetailsFoodViewController: UIViewController {
             detailsFoodView?.hoursLabel?.text = viewModel.isOpen
             detailsFoodView?.locationLabel?.text = viewModel.phoneNumber
             detailsFoodView?.ratingsLabel?.text = viewModel.rating
+            detailsFoodView?.collectionView?.reloadData()
         }
     }
     
 
+}
+
+extension DetailsFoodViewController: UICollectionViewDelegateFlowLayout, UICollectionViewDataSource {
+    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+        return viewModel?.imageUrls.count ?? 0
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "ImageCell", for: indexPath) as! DetailsCollectionViewCell
+        if let url = viewModel?.imageUrls[indexPath.item] {
+            cell.imageView.af_setImage(withURL: url)
+        }
+        return cell
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
+        return CGSize(width: collectionView.bounds.width, height: collectionView.bounds.height)
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, willDisplay cell: UICollectionViewCell, forItemAt indexPath: IndexPath) {
+        detailsFoodView?.pageControl?.currentPage = indexPath.item
+    }
 }
