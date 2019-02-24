@@ -139,6 +139,11 @@
                                                             <constraints>
                                                                 <constraint firstAttribute="height" constant="153" id="agL-AU-KqJ"/>
                                                             </constraints>
+                                                            <userDefinedRuntimeAttributes>
+                                                                <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                                    <integer key="value" value="25"/>
+                                                                </userDefinedRuntimeAttribute>
+                                                            </userDefinedRuntimeAttributes>
                                                         </imageView>
                                                         <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" alignment="top" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="Qkx-ma-EIJ">
                                                             <rect key="frame" x="0.0" y="169" width="343" height="48"/>

@@ -37,6 +37,7 @@ class RestaurantTableViewController: UITableViewController {
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "RestaurantCell", for: indexPath) as! RestaurantTableViewCell
+        
 
         let vm = viewModels[indexPath.row]
         cell.configure(with: vm)
