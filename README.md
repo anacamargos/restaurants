@@ -1,17 +1,17 @@
-# Lista de Restaurantes
+# Restaurants List
 
-O projeto consiste em um app para iOS. O seu objetivo é utilizar a localização do usuário para mostrar na tela alguns restaurantes da região. Além disso, também é possível visualizar detalhes de cada restaurante, como seu preço, seu telefone, sua avaliação e seu local no mapa.
+The project consists of an iOS app. Its purpose is to use the user's location to show on screen some restaurants in the area. In addition, you can also view details of each restaurant, such as its price, phone number, rating, and location on the map.
 
-Para ter acesso aos restaurantes da lista e aos dados de cada restaurante a aplicação consumiu uma API fornecida pelo Yelp.
+To access the restaurants on the list and the data of each restaurant the app consumed an API provided by Yelp.
 
-### Como executar o projeto
+### How to run the project
 
-Para executar o projeto rode no terminal os seguintes comandos:
+To run the project run the following commands in terminal:
 
 `````
 git clone https://github.com/anacamargos/restaurants.git
 
-cd restaurants (para a pasta clonada)
+cd restaurants (to cloned folder)
 
 open Restaurants.xcworkspace
 
